@@ -1,0 +1,711 @@
+local ElktrayWaterMark = Instance.new("ScreenGui")
+local TextLabel = Instance.new("TextButton")
+local UIGradient = Instance.new("UIGradient")
+local TextLabel_2 = Instance.new("TextLabel")
+local UIGradient_2 = Instance.new("UIGradient")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+
+ElktrayWaterMark.Name = "ElktrayWaterMark"
+ElktrayWaterMark.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ElktrayWaterMark.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ElktrayWaterMark.ResetOnSpawn = false 
+
+TextLabel.Parent = ElktrayWaterMark 
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 255, 0) 
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.000772226602, 0, 0.0343558267, 0)
+TextLabel.Size = UDim2.new(0.170134634, 0, 0.0700389072, 0)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "SigmaHub NewVersion"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0) 
+TextLabel.TextScaled = true
+TextLabel.TextSize = 28.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.MouseButton1Down:Connect(function()
+    print("Made By elktray")
+end)
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 126, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 209, 0))}
+UIGradient.Parent = TextLabel
+
+TextLabel_2.Parent = TextLabel
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(0, 255, 0) 
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(-0.000772226602, 0, 0.67410934, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 1, 0)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "V2"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0) 
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 45.000
+TextLabel_2.TextWrapped = true
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+UIGradient_2.Parent = TextLabel_2
+
+UITextSizeConstraint.Parent = TextLabel_2
+UITextSizeConstraint.MaxTextSize = 24
+
+UITextSizeConstraint_2.Parent = TextLabel
+UITextSizeConstraint_2.MaxTextSize = 27
+
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+    vu:Button2Down(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0,0), workspace.CurrentCamera.CFrame)
+end)
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Sigma Hub V2.0", "DarkTheme")
+
+-- Tab
+
+local Tab1 = Window:NewTab("Home🏡 ")
+local Tab1Section = Tab1:NewSection("Home🏡")
+
+Tab1Section:NewButton("Adopt Me! (Key system)","No description",function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/Diamond/main/AdoptMe"))()
+end)
+ 
+Tab1Section:NewButton("Brookhaven🏡RP","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+end)
+ 
+Tab1Section:NewButton("[🐯🍩UPDATE]Blox Friuts","No description",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+ 
+Tab1Section:NewButton("Combat Warriors","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyImposterRed/Scripts/main/NEW_NOVA"))()
+end)
+ 
+Tab1Section:NewButton("🎉Evade","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+end)
+ 
+Tab1Section:NewButton("Doors 👁 [🌐]","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+end)
+ 
+Tab1Section:NewButton("Rainbow Friends","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Rainbow-Friends/main/Rainbow%20Friends"))()
+end)
+ 
+Tab1Section:NewButton("🔪¡Survive the Killer!","No description",function()
+local games = {
+ 
+    ["SurviveTheKiller"] = 4580204640
+ 
+}
+ 
+for i,v in pairs(games) do
+    if game.PlaceId == v then print("Supported!"); loadstring(game:HttpGet("https://raw.githubusercontent.com/MiloHaxx/ChairWare/main/Games/" .. i .. ".lua"))() end
+end
+ 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MiloHaxx/ChairWare/main/dcJoin.lua"))()
+end)
+ 
+local Tab1Section = Tab1:NewSection("Shooter Games")
+ 
+Tab1Section:NewButton("Arsenal","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Maikderninja/Maikderninja/main/PWNERHUB.lua"))();
+end)
+ 
+Tab1Section:NewButton("BIG Paintball!","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+ 
+local Tab1Section = Tab1:NewSection("Featured games")
+ 
+Tab1Section:NewButton("Breaking Point","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ColdStep2/Breaking-Point-Funny-Squid-Hax/main/Breaking%20Point%20Funny%20Squid%20Hax",true))();
+end)
+ 
+Tab1Section:NewButton("Breaking Point (Auto Hit)","No description",function()
+while wait() do for i,v in pairs(game.Players:GetPlayers()) do if v.Name ~= game.Players.LocalPlayer.Name then if game.Workspace:FindFirstChild(v.Name) then if game.Workspace[v.Name].Humanoid.Sit ~= true then if game.Workspace[v.Name]:FindFirstChild("Blade") then game:GetService("ReplicatedStorage").RemoteEvent:FireServer(37, CFrame.new(Vector3.new(0, 0, 0), Vector3.new(0, 0, 0)), Vector3.new(v.Character.HumanoidRootPart.CFrame.x, 4, v.Character.HumanoidRootPart.CFrame.z), Vector3.new(0, 0, 0)) wait(.1) game:GetService("ReplicatedStorage").RemoteEvent:FireServer(43, v.Character.HumanoidRootPart, v, "IIlIla", true) else if v.Backpack:FindFirstChild("Blade") then game:GetService("ReplicatedStorage").RemoteEvent:FireServer(37, CFrame.new(Vector3.new(0, 0, 0), Vector3.new(0, 0, 0)), Vector3.new(v.Character.HumanoidRootPart.CFrame.x, 4, v.Character.HumanoidRootPart.CFrame.z), Vector3.new(0, 0, 0)) wait(.1) game:GetService("ReplicatedStorage").RemoteEvent:FireServer(43, v.Character.HumanoidRootPart, v, "IIlIla", true) end end end end end end end
+end)
+ 
+Tab1Section:NewButton("Breaking Point ( old)","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7NHacks/Obfuscated/master/Breaking%20Point%20H4R7N%20Hack.lua"))()
+end)
+ 
+Tab1Section:NewButton("Breaking Point (new)","No description",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H4R7NHacks/Obfuscated/master/Breaking%20Point%20H4R7N%20Hack%20v1.2.lua"))()
+end)
+
+local Tab2 = Window:NewTab("Amazing")
+local Tab2Section = Tab2:NewSection("Amazing")
+
+Tab2Section:NewButton("Give HyperBike", "Gives you a hyper bike for free", function()
+game.ReplicatedStorage.GetItem:FireServer("GreenHyperbike")
+end)
+
+Tab2Section:NewButton("Carpet", "Gives you a rideable carpet", function()
+game.ReplicatedStorage.GetItem:FireServer("RainbowMagicCarpet")
+end)
+
+Tab2Section:NewButton("Bang r15", "Find it out by yourself", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/manimcool21/bang/main/Protected%20(27).lua'))()
+end)
+
+Tab2Section:NewButton("Ragdoll Engine GUI", "Gives you a OP gui", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
+end)
+
+local Tab2Section = Tab2:NewSection("PAID")
+
+Tab2Section:NewButton("TITAN HUB", "https://discord.gg/JM2fUKMXaS", function()
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/MatDevv/TitanHubSecurity/main/TitanHubSecurity'),true))()
+end)
+
+Tab2Section:NewButton("NOOB'S WL GUI", "https://discord.gg/3QdG5ueFzw", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/epKQc3mW", true))()
+end)
+
+local Tab2Section = Tab2:NewSection("Hitbox By Me")
+
+Tab2Section:NewToggle("Hitbox By Elk", "ToggleInfo", function(state)
+    if state then
+_G.HeadSize = 25
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+    if _G.Disabled then
+        for i, v in next, game:GetService('Players'):GetPlayers() do
+            if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+                pcall(function()
+                    v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize, _G.HeadSize, _G.HeadSize)
+                    v.Character.HumanoidRootPart.Transparency = 0.7
+                    v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Bright red")
+                    v.Character.HumanoidRootPart.Material = "Neon"
+                    v.Character.HumanoidRootPart.CanCollide = false
+                end)
+            end
+        end
+    end
+end)
+    end
+end) 
+
+local Tab3 = Window:NewTab("More Scripts")
+local Tab3Section = Tab3:NewSection("More Scripts") 
+
+Tab3Section:NewButton("Bloxfruit1", "yeye", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/SoyElPekka/BeanHub/main/bloxfruitsnewpc2023'),true))()
+ end) 
+ 
+ Tab3Section:NewButton("Bloxfruit2", "yeye", function()
+ loadstring(game:HttpGet("https://pastebin.com/raw/BdvUGb2q"))()
+ end) 
+ 
+ Tab3Section:NewButton("Bloxfruit3", "yeye", function()
+ loadstring(game:HttpGet('https://pastebin.com/raw/g8jfBUhT'))()
+ end) 
+ 
+ local Tab3Section = Tab3:NewSection("Universals") 
+
+Tab3Section:NewButton("UnviersalHub1", "yo", function() 
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/ArgetnarYT/scripts/main/PetsimX.lua"), true))()
+end) 
+
+Tab3Section:NewButton("UniversalHub2", "yo", function() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/AirHub/main/AirHub.lua"))()
+end) 
+
+Tab3Section:NewButton("UniversalHub3", "yo", function() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Exunys-ESP/main/src/ESP.lua"))()
+end) 
+
+local Tab3Section = Tab3:NewSection("Bedwars")
+
+Tab3Section:NewButton("Vape", "Don't Vape(Andrew Tate) Quote Of The Day", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+end)
+
+local Tab3Section = Tab3:NewSection(" MyBedwars")
+
+Tab3Section:NewButton("AndrixHubv1", "Wow", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/BsU3gGuP"))()
+end) 
+
+Tab3Section:NewButton("OrionAshura", "Wow", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/A9G4faXL"))()
+end)
+
+Tab3Section:NewButton("AndrixMobile", "Wow", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/EGJdJJqL"))()
+end)
+
+Tab3Section:NewButton("Arceus V1", "Wow", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/4WG6stSF"))()
+end)
+
+Tab3Section:NewButton("ElktrayAndrixV1", "Wow", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AndrixCoding/ElktrayAndrixV1/main/ElktrayAndrixV1"))()
+end)
+
+Tab3Section:NewButton("Anti Void (Black) "," bruh",function()
+local specialpos = (workspace.MapCFrames:FindFirstChild("center") and workspace.MapCFrames.center.Value.p == Vector3.new(77, 11, 35))
+                        AntiVoidP = Instance.new("Part")
+                        AntiVoidP.Parent = Workspace
+                        AntiVoidP.Name = "AntiVoid"
+                        AntiVoidP.CanCollide = true
+                        AntiVoidP.Size = Vector3.new(2048, 0.30, 2048)
+                        AntiVoidP.Anchored = true
+                        AntiVoidP.Transparency = 0.68
+                        AntiVoidP.Material = Enum.Material.Grass
+                        AntiVoidP.Color = Color3.new(0, 0, 0)
+                        AntiVoidP.Position = Vector3.new(0, 15.5, 0)
+                    print("...")
+                end)
+                
+     local Tab4 = Window:NewTab("Just More")
+local Tab4Section = Tab4:NewSection("Just More") 
+
+Tab4Section:NewButton("Keyboard Custom Made "," bruh",function() 
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/mob.txt'),true))()
+
+local KeyboardguiWarriorRoberrVersion = Instance.new("ScreenGui")
+local Drag = Instance.new("Frame")
+local Close = Instance.new("TextButton")
+
+-- Properties:
+
+KeyboardguiWarriorRoberrVersion.Name = "Keyboard gui WarriorRoberr Version"
+KeyboardguiWarriorRoberrVersion.Parent = game.CoreGui
+KeyboardguiWarriorRoberrVersion.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Drag.Name = "Drag"
+Drag.Parent = KeyboardguiWarriorRoberrVersion
+Drag.BackgroundColor3 = Color3.fromRGB(255, 0, 0) 
+Drag.BorderSizePixel = 0
+Drag.Position = UDim2.new(0.147916675, 0, 0.0593749993, 0)
+Drag.Size = UDim2.new(0, 270, 0, 30)
+Drag.Active = true
+Drag.Draggable = true
+
+Close.Name = "Close"
+Close.Parent = Drag
+Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.999839723, 0, -0.00729167089, 0)
+Close.Size = UDim2.new(0, 30, 0, 30)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(0, 0, 0) 
+Close.TextSize = 35.000
+Close.MouseButton1Click:Connect(function()
+	KeyboardguiWarriorRoberrVersion:Destroy()
+end)
+
+game.CoreGui["BUNB0yBUN BOARD"].KeyBoard.Parent = Drag
+game.CoreGui["BUNB0yBUN BOARD"]:Destroy()
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Bunb0ybun.Text = "BETTER VERSION"
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Position = UDim2.new(0, 0, 0, 35)
+game.CoreGui["Keyboard gui WarriorRoberr Version"].Drag.KeyBoard.Bunb0ybun.TextSize = 10
+end)
+
+Tab4Section:NewTextBox("Snypase", "TextboxInfo", function(txt)
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local SynapseXgui = Instance.new("ScreenGui")
+local sf = Instance.new("Frame")
+local input = Instance.new("TextBox")
+local sciptbar = Instance.new("Frame")
+local logo1 = Instance.new("TextLabel")
+local logo2 = Instance.new("TextLabel")
+local logo3 = Instance.new("TextLabel")
+local clearb = Instance.new("TextButton")
+local openfile = Instance.new("TextButton")
+local executefile = Instance.new("TextButton")
+local attach = Instance.new("TextButton")
+local sh = Instance.new("TextButton")
+local svf = Instance.new("TextButton")
+local executeb = Instance.new("TextButton")
+local opt = Instance.new("TextButton")
+local _ = Instance.new("TextLabel")
+local x = Instance.new("TextLabel")
+--Properties:
+SynapseXgui.Name = "Synapse X gui"
+SynapseXgui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SynapseXgui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+sf.Name = "sf"
+sf.Parent = SynapseXgui
+sf.Active = true
+sf.BackgroundColor3 = Color3.new(0.196078, 0.196078, 0.196078)
+sf.BorderSizePixel = 0
+sf.Position = UDim2.new(0.0862250254, 0, 0.0976253152, 0)
+sf.Size = UDim2.new(0, 771, 0, 353)
+sf.Draggable = true
+
+input.Name = "input"
+input.Parent = sf
+input.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+input.BorderSizePixel = 0
+input.Position = UDim2.new(0.0259403381, 0, 0.0651558042, 0)
+input.Size = UDim2.new(0, 532, 0, 265)
+input.Font = Enum.Font.SourceSans
+input.Text = ""
+input.TextColor3 = Color3.new(1, 1, 1)
+input.TextSize = 30
+input.TextXAlignment = Enum.TextXAlignment.Left
+input.TextYAlignment = Enum.TextYAlignment.Top
+
+sciptbar.Name = "sciptbar"
+sciptbar.Parent = sf
+sciptbar.BackgroundColor3 = Color3.new(0.117647, 0.117647, 0.117647)
+sciptbar.BorderSizePixel = 0
+sciptbar.Position = UDim2.new(0.756160855, 0, 0.0651558042, 0)
+sciptbar.Size = UDim2.new(0, 165, 0, 265)
+
+logo1.Name = "logo1"
+logo1.Parent = sf
+logo1.BackgroundColor3 = Color3.new(1, 1, 1)
+logo1.BackgroundTransparency = 1
+logo1.BorderSizePixel = 0
+logo1.Position = UDim2.new(-0.0129701691, 0, 0, 0)
+logo1.Size = UDim2.new(0, 55, 0, 23)
+logo1.Font = Enum.Font.Cartoon
+logo1.Text = "S"
+logo1.TextColor3 = Color3.new(1, 1, 1)
+logo1.TextSize = 30
+
+logo2.Name = "logo2"
+logo2.Parent = sf
+logo2.BackgroundColor3 = Color3.new(1, 1, 1)
+logo2.BackgroundTransparency = 1
+logo2.BorderSizePixel = 0
+logo2.Position = UDim2.new(-1.86264515e-09, 0, -0.0169971678, 0)
+logo2.Size = UDim2.new(0, 55, 0, 23)
+logo2.Font = Enum.Font.Cartoon
+logo2.Text = "x"
+logo2.TextColor3 = Color3.new(1, 0.392157, 0)
+logo2.TextSize = 15
+
+logo3.Name = "logo3"
+logo3.Parent = sf
+logo3.BackgroundColor3 = Color3.new(1, 1, 1)
+logo3.BackgroundTransparency = 1
+logo3.BorderSizePixel = 0
+logo3.Position = UDim2.new(0.440985739, 0, 0, 0)
+logo3.Size = UDim2.new(0, 132, 0, 23)
+logo3.Font = Enum.Font.Cartoon
+logo3.Text = "Synapse X v1.3.2 created by:yanbrz21#9124"
+logo3.TextColor3 = Color3.new(1, 1, 1)
+logo3.TextSize = 15
+
+clearb.Name = "clearb"
+clearb.Parent = sf
+clearb.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+clearb.BorderSizePixel = 0
+clearb.Position = UDim2.new(0.140077829, 0, 0.872521222, 0)
+clearb.Size = UDim2.new(0, 88, 0, 30)
+clearb.Font = Enum.Font.SourceSans
+clearb.Text = "Clear"
+clearb.TextColor3 = Color3.new(1, 1, 1)
+clearb.TextSize = 15
+clearb.MouseButton1Down:connect(function()
+input.Text = ""
+end)
+
+openfile.Name = "openfile"
+openfile.Parent = sf
+openfile.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+openfile.BorderSizePixel = 0
+openfile.Position = UDim2.new(0.272373527, 0, 0.872521222, 0)
+openfile.Size = UDim2.new(0, 84, 0, 30)
+openfile.Font = Enum.Font.SourceSans
+openfile.Text = "Open File"
+openfile.TextColor3 = Color3.new(1, 1, 1)
+openfile.TextSize = 15
+
+executefile.Name = "execute file"
+executefile.Parent = sf
+executefile.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+executefile.BorderSizePixel = 0
+executefile.Position = UDim2.new(0.391699106, 0, 0.872521222, 0)
+executefile.Size = UDim2.new(0, 88, 0, 30)
+executefile.Font = Enum.Font.SourceSans
+executefile.Text = "Execute File"
+executefile.TextColor3 = Color3.new(1, 1, 1)
+executefile.TextSize = 15
+
+attach.Name = "attach"
+attach.Parent = sf
+attach.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+attach.BorderSizePixel = 0
+attach.Position = UDim2.new(0.770428061, 0, 0.872521222, 0)
+attach.Size = UDim2.new(0, 88, 0, 30)
+attach.Font = Enum.Font.SourceSans
+attach.Text = "Attach"
+attach.TextColor3 = Color3.new(1, 1, 1)
+attach.TextSize = 15
+attach.MouseButton1Down:connect(function()
+print "attached :D"
+end)
+
+sh.Name = "sh"
+sh.Parent = sf
+sh.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+sh.BorderSizePixel = 0
+sh.Position = UDim2.new(0.898832679, 0, 0.872521222, 0)
+sh.Size = UDim2.new(0, 78, 0, 30)
+sh.Font = Enum.Font.SourceSans
+sh.Text = "Script Hub"
+sh.TextColor3 = Color3.new(1, 1, 1)
+sh.TextSize = 15
+
+svf.Name = "svf"
+svf.Parent = sf
+svf.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+svf.BorderSizePixel = 0
+svf.Position = UDim2.new(0.520103753, 0, 0.872521222, 0)
+svf.Size = UDim2.new(0, 88, 0, 30)
+svf.Font = Enum.Font.SourceSans
+svf.Text = "Save Files"
+svf.TextColor3 = Color3.new(1, 1, 1)
+svf.TextSize = 15
+
+executeb.Name = "executeb"
+executeb.Parent = sf
+executeb.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+executeb.BorderSizePixel = 0
+executeb.Position = UDim2.new(9.31322575e-10, 0, 0.872521222, 0)
+executeb.Size = UDim2.new(0, 88, 0, 30)
+executeb.Font = Enum.Font.SourceSans
+executeb.Text = "Execute"
+executeb.TextColor3 = Color3.new(1, 1, 1)
+executeb.TextSize = 15
+executeb.MouseButton1Down:connect(function()
+loadstring(input.Text)()
+end)
+
+opt.Name = "opt"
+opt.Parent = sf
+opt.BackgroundColor3 = Color3.new(0.235294, 0.235294, 0.235294)
+opt.BorderSizePixel = 0
+opt.Position = UDim2.new(0.642023385, 0, 0.872521222, 0)
+opt.Size = UDim2.new(0, 88, 0, 30)
+opt.Font = Enum.Font.SourceSans
+opt.Text = "Options"
+opt.TextColor3 = Color3.new(1, 1, 1)
+opt.TextSize = 15
+
+_.Name = "_"
+_.Parent = sf
+_.BackgroundColor3 = Color3.new(1, 1, 1)
+_.BackgroundTransparency = 1
+_.BorderSizePixel = 0
+_.Position = UDim2.new(0.952010393, 0, -0.0169971678, 0)
+_.Size = UDim2.new(0, 14, 0, 23)
+_.Font = Enum.Font.Cartoon
+_.Text = "_"
+_.TextColor3 = Color3.new(1, 1, 1)
+_.TextSize = 17
+_.MouseButton1Down:connect(function()
+sf.Visible = false
+end)
+
+x.Name = "x"
+x.Parent = sf
+x.BackgroundColor3 = Color3.new(1, 1, 1)
+x.BackgroundTransparency = 1
+x.BorderSizePixel = 0
+x.Position = UDim2.new(0.981841743, 0, -0.0169971678, 0)
+x.Size = UDim2.new(0, 14, 0, 23)
+x.Font = Enum.Font.Cartoon
+x.Text = "x"
+x.TextColor3 = Color3.new(1, 1, 1)
+x.TextSize = 17
+x.MouseButton1Down:connect(function()
+sf.Visible = false
+end)
+-- Scripts:
+end) 
+
+Tab4Section:NewButton("SigmaHubV1"," bruh",function() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AndrixCoding/SigmaHubV1/main/SigmaHubV1"))()
+end) 
+
+local Tab4Section = Tab4:NewSection("Announcement") 
+
+local Tab4Section = Tab4:NewSection("If You wanna showcase the script dm me in discord elktrayandrix78") 
+
+local Tab4Section = Tab4:NewSection("And now if you dm me i will give you the direct pastebin(freenote) ") 
+
+local Tab5 = Window:NewTab("Others")
+local Tab5Section = Tab5:NewSection("Others")
+
+Tab5Section:NewButton("AdoptMe1", "ButtonInfo", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+
+Tab5Section:NewButton("AutoFarmingAdoptMe2", "ButtonInfo", function()
+getgenv().mainKey = "nil"
+ 
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
+Tab5Section:NewButton("AdoptMe3", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BloxiYT/Diamond/main/AdoptMe"))()
+end)
+
+local Tab5Section = Tab5:NewSection("Another Scripts")
+
+Tab5Section:NewToggle("Infinite Jumps", "Jumps Infinitely", function(state)
+    if state then
+local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
+    end
+end)
+
+Tab5Section:NewButton("All TycoonsScript", "ButtonInfo", function()
+loadstring(game:HttpGet("https://freenote.biz/raw/lOrbw9bo85",true))()
+end)
+
+Tab5Section:NewButton("Gravity(15)", "ButtonInfo", function()
+Workspace.Gravity = 15
+end)
+
+
+Tab5Section:NewButton("StrongMan Sim", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0strongman", true))()
+print("Clicked")
+end)
+
+Tab5Section:NewButton("Zombie Attack", "ButtonInfo", function()
+loadstring(game:HttpGet('https://ghost-storage.7m.pl/scripts/ghosthublauncher.lua'))()
+print("Clicked")
+end)
+
+local Tab6 = Window:NewTab("Fe ")
+local Tab6Section= Tab6:NewSection("Bugged")
+
+Tab6Section:NewButton("Freeze Player", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/creepstu/fuzzy-octo-giggle/main/Source'))()
+print("Clicked")
+end)
+
+Tab6Section:NewButton("Tools Giver 2", "ButtonInfo", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/dqvh/dqvh/main/98FIGBB')))()
+print("Clicked")
+end)
+
+Tab6Section:NewButton("Snake", "ButtonInfo", function()
+loadstring(game:HttpGet(('https://pastefy.ga/tWBTcE4R/raw'),true))()
+print("Clicked")
+end)
+
+local Tab6 = Window:NewTab("Games")
+local Tab6Section = Tab6:NewSection("Games")
+
+Tab6Section:NewButton("Vehicle Legends", "ButtonInfo", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/0MqfXpvY", true))()
+print("Clicked")
+end)
+
+Tab6Section:NewButton("Race Clicker", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0raceclicker", true))()
+print("Clicked")
+end)
+
+Tab6Section:NewButton("Ninja Legends", "ButtonInfo", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()
+print("Clicked")
+end)
+
+Tab6Section:NewButton("RaceClicker2", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/DEV-TK02/StrikeHub/main/Loader', true))()
+end) 
+
+local Tab6Section = Tab6:NewSection("Helpers")
+
+local Tab6Section = Tab6:NewSection("usa_gaming")
+
+local Tab6Section = Tab6:NewSection("Thx usa_gaming")
+
+local Tab7 = Window:NewTab("More Buttons")
+local Tab7Section = Tab7:NewSection("More Buttons")
+
+Tab7Section:NewButton("SeanHub", "ButtonInfo", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/dnaielne/Sean-Hub-Better/main/SeanHub.lua', true))();
+end)
+
+Tab7Section:NewButton("Commands", "ButtonInfo", function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\102\71\89\97\52\105\55\116\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
+print("Clicked")
+end)
+
+Tab7Section:NewButton("pet sim x", "ptw", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DeezScripts/PsxStScripts69/main/scripts/sign/petchanger/unallhoverboards"))();
+    print("Clicked")
+end)
+ 
+ 
+ Tab7Section:NewButton("tp tool", "click to tp", function()
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click Teleport"
+tool.Activated:connect(function()
+local pos = mouse.Hit+Vector3.new(0,2.5,0)
+pos = CFrame.new(pos.X,pos.Y,pos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+    print("Clicked")
+end)
+
+Tab7Section:NewButton("noclip", "lol", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/pKV2Ys4E"))()
+    print("Clicked")
+end)
+
+local Tab7Section = Tab7:NewSection("MY Name Is ElktrayAndrix Curson") 
+
+local Tab7Section = Tab7:NewSection("BYE! Thank You For Using The Script") 
+
+local Tab7Section = Tab7:NewSection("Player Id: "..game.Players.LocalPlayer.UserId .."")
+
+local Tab7Section = Tab7:NewSection("Account Age: "..game.Players.LocalPlayer.AccountAge.."")
+
+ToggleGui = Instance.new("ScreenGui")
+local Toggle = Instance.new("TextButton")
+
+ToggleGui.Name = "ToggleGui_HE"
+ToggleGui.Parent = game.CoreGui
+
+Toggle.Name = "Toggle"
+Toggle.Parent = ToggleGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 128, 0) 
+Toggle.BackgroundTransparency = 0.660
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0.0650164187, 0, 0.0888099447, 0)
+Toggle.Font = Enum.Font.SourceSans
+Toggle.Text = "Open Toggle"
+Toggle.TextScaled = true
+Toggle.TextColor3 = Color3.fromRGB(255, 0, 0)  
+Toggle.TextSize = 200.000  
+Toggle.TextXAlignment = Enum.TextXAlignment.Left
+Toggle.Active = true
+Toggle.Draggable = false
+Toggle.MouseButton1Click:connect(function()
+    Library:ToggleUI()
+end)
